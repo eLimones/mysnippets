@@ -1,0 +1,49 @@
+snippet function
+function $1 () {
+	$0
+}
+endsnippet
+
+snippet afun "create anonymous function" w
+function() {
+	$0
+}
+endsnippet
+
+
+snippet import 
+import { $1 } from '$2';
+endsnippet
+
+snippet require 
+const $1 = require('$1');
+endsnippet
+
+snippet inter  "string interpolation" i
+${$1}
+endsnippet
+
+snippet it
+it('$1', function() {
+	$0
+});
+endsnippet
+
+snippet describe
+describe('$1', function() {
+	$0
+});
+endsnippet
+
+snippet before
+before('$1', function() {
+	$0
+});
+endsnippet
+
+snippet after
+after('$1', function() {
+	$0
+});
+endsnippet
+

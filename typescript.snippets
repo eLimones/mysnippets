@@ -1,0 +1,23 @@
+snippet import
+import { $1 } from '$2';
+endsnippet
+
+snippet deco 
+@$1({
+	$0
+})
+endsnippet
+
+snippet component 
+@Component({
+	selector: '$1',
+	templateUrl: '$2'
+})
+export class $3 {
+}
+endsnippet
+
+snippet class 
+export class $1 {
+}
+endsnippet
