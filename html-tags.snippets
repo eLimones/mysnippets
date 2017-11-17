@@ -66,6 +66,10 @@ snippet code "<code>" w
 <code>$1</code>
 endsnippet
 
+snippet comment "comment"
+<!-- ${0:${VISUAL}} -->
+endsnippet
+
 snippet data "<data>"
 <data value="$2">$1</data>
 endsnippet
@@ -129,6 +133,13 @@ snippet footer "<footer>"
 	${1:footer content}
 </footer>
 endsnippet
+
+snippet form "<form>"
+<form action="${1:/}" method="${2:post}">
+	${0:${VISUAL}}
+</form>
+endsnippet
+
 
 snippet h1 "HTML <h1>" w
 <h1>${0:${VISUAL}}</h1>
