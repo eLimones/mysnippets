@@ -1,8 +1,16 @@
 snippet include_guard
 #ifndef `!v toupper(expand("%:t:r")) . "_H_INCLUDED"`
 #define `!v toupper(expand("%:t:r")) . "_H_INCLUDED"`
+
+#ifdef __cplusplus
 extern "C" {
+#endif
+
 	$0
+
+#ifdef __cplusplus
 }
+#endif
+
 #endif
 endsnippet
