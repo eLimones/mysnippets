@@ -2,6 +2,14 @@ priority -40
 
 extends jscommon
 
+snippet log
+console.log($0);
+endsnippet
+
+snippet jlog
+console.log(JSON.parse(JSON.stringify($0)));
+endsnippet
+
 snippet require
 const $1 = require('$1');
 endsnippet

@@ -34,28 +34,6 @@ snippet inter "Interpolation" w
 {{ $0 }}
 endsnippet
 
-snippet direct "directive"
-{% $0 %}
-endsnippet
-
-snippet if "if block"
-{% if $1 %}
-	$0
-{% endif %}
-endsnippet
-
-snippet for "for block"
-{% for $1 %}
-	$0
-{% endfor %}
-endsnippet
-
-snippet block "block"
-{% block $1 %}
-	$0
-{% endblock %}
-endsnippet
-
 snippet tag "tag"
 <$1>
 	$0
